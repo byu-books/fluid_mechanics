@@ -1,7 +1,12 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+
+- file: title_page
+  numbered: true
+
+- part: Chapters
+  chapters:
+      - file: chapters/fluid_properties
+      - file: chapters/fluid_statics
+      - file: chapters/Bernoulli_equation
+      - file: chapters/pumps/pumps
+

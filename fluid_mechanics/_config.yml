@@ -1,34 +1,24 @@
-#######################################################################################
-# A default configuration that will be loaded for all jupyter books
-# See the documentation for help and more options: 
-# https://jupyterbook.org/customize/config.html
-
-#######################################################################################
-# Book settings
-title                       : Fluid Mechanics for Engineers  # The title of the book. Will be placed in the left navbar.
-author                      : David O. Lignell  # The author of the book
-copyright                   : "2021"  # Copyright year to be placed in the footer
-logo                        : logo.png  # A path to the book logo
-
-
-
-
-
-
-
-
-
+title      : Fluid Mechanics for Engineers
+author     : David O. Lignell
+copyright  : "2021"
+logo       : logo.png
 
 execute:
   execute_notebooks: force         # force, auto, cache, 'off'  https://jupyterbook.org/content/execute.html
 
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/byu-books/fluid_mechanics
+  branch: master                   # default branch
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-html:
-  use_issues_button: true
-  use_repository_button: true
+html:                              # github buttons
+  use_issues_button:       true
+  use_repository_button:   true
+  use_edit_page_button:    true
+
+only_build_toc_files: true
+
+parse:
+  myst_extended_syntax: true        # needed for html image parsing (at least)
+
+launch_buttons:
+    thebe: true
