@@ -14,7 +14,7 @@ while getopts "w" OPTION
 do
     case $OPTION in
         w)
-            ghp-import -n -p -c fluid_mechanics.com -f _build/html;
+            ghp-import -n -p -f _build/html
     esac
 done
 
