@@ -17,7 +17,7 @@ A fully-rendered HTML version of the book will be built in `odtresearch/_build/h
 
 ### Hosting the book
 
-The html version of the book is hosted on the `gh-pages` branch of this repo. To publish the built version of the book online, which is available [at this link](https://byu-books.github.io/fluid_mechanics/title_page.html), run
+The html version of the book is hosted on the `gh-pages` branch of this repo. To publish the built version of the book online, which is available at [fluidsbook.com](https://fluidsbook.com), run
 - `ghp-import -n -p -f fluid_mechanics/_build/html`
 
 This will automatically push your build to the `gh-pages` branch. More information on this hosting process can be found [here](https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages).
