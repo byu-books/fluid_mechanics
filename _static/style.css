@@ -1,0 +1,53 @@
+
+/*------ hover elements (element with class="hoverme" followed by element with class="hide") */
+.hoverme {
+    color: #B8860B
+}
+.hide {
+    display: none;
+}
+.hoverme:hover + .hide {
+    display: block;
+    color: black
+}
+
+/*------ center tables on the page */
+
+table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+}
+
+table p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------ expandable button: https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.expandable {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.expandable:hover, .expandable:active {
+  background-color: #555;
+  border: none;
+}
+
+.expandable_content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
