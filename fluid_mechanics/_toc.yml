@@ -1,12 +1,12 @@
-# Table of contents
+format: jb-book
+root: title_page
 
-- file: title_page
+options:
+  caption: Chapters
   numbered: true
 
-- part: Chapters
-  chapters:
-      - file: chapters/fluid_properties
-      - file: chapters/fluid_statics
-      - file: chapters/Bernoulli_equation
-      - file: chapters/pumps/pumps
-
+chapters:
+- file: chapters/fluid_properties/fluid_properties
+- file: chapters/fluid_statics
+- file: chapters/Bernoulli_equation
+- file: chapters/pumps/pumps

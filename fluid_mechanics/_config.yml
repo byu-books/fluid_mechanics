@@ -22,3 +22,8 @@ parse:
 
 launch_buttons:
     thebe: true
+
+sphinx:
+  config:
+    html_js_files: "expandable.js\" async=\"async"
+
