@@ -44,8 +44,6 @@
     <script src="../../_static/expandable.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -130,10 +128,6 @@
 
     </div>
 </nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
 
 </div>
 
@@ -255,6 +249,23 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viscosity">
+   1.2. Viscosity
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#units">
+     1.2.1. Units
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kinematic-viscosity">
+     1.2.2. Kinematic viscosity
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -270,8 +281,9 @@
 <h1><span class="section-number">1. </span>Fluid Properties<a class="headerlink" href="#fluid-properties" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="density">
 <h2><span class="section-number">1.1. </span>Density<a class="headerlink" href="#density" title="Permalink to this headline">¶</a></h2>
-<p>The density of a fluid is the mass of the fluid per unit volume.</p>
-<p>The symbol <span class="math notranslate nohighlight">\(\rho\)</span> is typically used.</p>
+<p>The density <span class="math notranslate nohighlight">\(\rho\)</span> of a fluid is the mass of the fluid per unit volume:</p>
+<div class="math notranslate nohighlight">
+\[\rho = \frac{m}{V}.\]</div>
 <p>Density is a point property in the sense that to get mass we have to multiply <span class="math notranslate nohighlight">\(\rho\)</span> by some volume. If the density is spatially uniform, we have <span class="math notranslate nohighlight">\(m=\rho V\)</span>. For a differential volume element <span class="math notranslate nohighlight">\(dV\)</span>, we have <span class="math notranslate nohighlight">\(dm = \rho dV\)</span>, and the mass over some finite volume can be evaluated by integration:</p>
 <div class="math notranslate nohighlight" id="equation-eq-m-rho">
 <span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-m-rho" title="Permalink to this equation">¶</a></span>\[m = \int_V \rho(\mathbf{x})dV.\]</div>
@@ -335,7 +347,54 @@
 </div>
 </div>
 <!-- <span class="hoverme">Hover over me<br></span> -->
-<!-- <span class="hide"> isnt this fun! </span> --></div>
+<!-- <span class="hide"> isnt this fun! </span> -->
+</div>
+</div>
+<div class="section" id="viscosity">
+<h2><span class="section-number">1.2. </span>Viscosity<a class="headerlink" href="#viscosity" title="Permalink to this headline">¶</a></h2>
+<p>The viscosity <span class="math notranslate nohighlight">\(\mu\)</span> of a fluid is a measure of the resistance to flow. Higher viscosity fluids have higher flow friction and are more resistant to deformation. Honey has a high viscosity compared to water. See <a class="reference internal" href="#fig-viscosity-demo"><span class="std std-numref">Fig. 1.2</span></a> for a simulation illustrating two fluids of different viscosities.</p>
+<div class="figure align-default" id="fig-viscosity-demo">
+<a class="reference internal image-reference" href="../../_images/Viscosities.gif"><img alt="../../_images/Viscosities.gif" src="../../_images/Viscosities.gif" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Demonstration of flow of fluids with low (left) and high (right) viscosities. Attribution: “<a class="reference external" href="https://en.wikipedia.org/wiki/File:Viscosities.gif">Viscosities.gif</a>” by <a class="reference external" href="https://commons.wikimedia.org/w/index.php?title=User:Synapticrelay&amp;action=edit&amp;redlink=1">Synapticrelay</a> under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>; no changes made.</span><a class="headerlink" href="#fig-viscosity-demo" title="Permalink to this image">¶</a></p>
+</div>
+<p>Viscosity is precisely defined for a <em>Newtonian fluid</em> which obeys the relation</p>
+<div class="math notranslate nohighlight" id="equation-eq-newtons-law-of-viscosity">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-eq-newtons-law-of-viscosity" title="Permalink to this equation">¶</a></span>\[\tau = -\mu\frac{du}{dy}.\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(\tau\)</span> is the shear stress, <span class="math notranslate nohighlight">\(u\)</span> is a velocity, and <span class="math notranslate nohighlight">\(y\)</span> is a directional coordinate. These quantities are illustrated in <a class="reference internal" href="#fig-couette-plates"><span class="std std-numref">Fig. 1.3</span></a>. The figure illustrates the flow between infinite parallel plates where the lower plate is fixed and the upper plate moves at some velocity <span class="math notranslate nohighlight">\(u\)</span>. This is a so-called <em><a class="reference external" href="https://en.wikipedia.org/wiki/Couette_flow">Couette flow</a></em>.</p>
+<div class="figure align-default" id="fig-couette-plates">
+<a class="reference internal image-reference" href="../../_images/fig_couette_plates.svg"><img alt="../../_images/fig_couette_plates.svg" src="../../_images/fig_couette_plates.svg" width="50%" /></a>
+<p class="caption"><span class="caption-number">Fig. 1.3 </span><span class="caption-text">Illustration of steady flow between infinite parallel plates for a Newtonian fluid.</span><a class="headerlink" href="#fig-couette-plates" title="Permalink to this image">¶</a></p>
+</div>
+<p>A linear <span class="math notranslate nohighlight">\(u(y)\)</span> profile is established between the plates. The shear stress <span class="math notranslate nohighlight">\(\tau\)</span> is the force per unit plate area required to maintain the flow, and Eq. <a class="reference internal" href="#equation-eq-newtons-law-of-viscosity">(1.3)</a> shows that <span class="math notranslate nohighlight">\(\mu\)</span> is a proportionality constant between <span class="math notranslate nohighlight">\(\tau\)</span> and the so-called <em>strain rate</em> <span class="math notranslate nohighlight">\(du/dy\)</span>. Eq. <a class="reference internal" href="#equation-eq-newtons-law-of-viscosity">(1.3)</a> can be rewritten in terms of the force on the plates as</p>
+<div class="math notranslate nohighlight">
+\[
+F = \tau A = -\mu A\frac{du}{dy}.
+\]</div>
+<p>We have the following:</p>
+<ul class="simple">
+<li><p>for a given plate area and given <span class="math notranslate nohighlight">\(\mu\)</span>, a higher plate velocity gives higher strain rate <span class="math notranslate nohighlight">\(du/dy\)</span>, requiring more force.</p></li>
+<li><p>the force required is proportional to the plate area.</p></li>
+<li><p>the forces involved are frictional.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> is a proportionality constant relating <span class="math notranslate nohighlight">\(\tau\)</span> to <span class="math notranslate nohighlight">\(du/dy\)</span>, and for given area and <span class="math notranslate nohighlight">\(du/dy\)</span>, a doubling of <span class="math notranslate nohighlight">\(\mu\)</span> doubles the required force.</p></li>
+</ul>
+<div class="section" id="units">
+<h3><span class="section-number">1.2.1. </span>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
+<p>The units of <span class="math notranslate nohighlight">\(\mu\)</span> are</p>
+<ul class="simple">
+<li><p>kg/(m<span class="math notranslate nohighlight">\(\cdot\)</span>s) = Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s (SI units).</p></li>
+<li><p>lbm/(ft<span class="math notranslate nohighlight">\(\cdot\)</span>s) (US units).</p></li>
+<li><p>poise (P) or centipoise (cP), with 1 P = 0.1 Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s, and 1 cP = 0.001 Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s</p></li>
+</ul>
+</div>
+<div class="section" id="kinematic-viscosity">
+<h3><span class="section-number">1.2.2. </span>Kinematic viscosity<a class="headerlink" href="#kinematic-viscosity" title="Permalink to this headline">¶</a></h3>
+<p>The viscosity <span class="math notranslate nohighlight">\(\mu\)</span> discussed above is called the <em>dynamic</em> viscosity. The kinematic viscosity <span class="math notranslate nohighlight">\(\nu\)</span> is frequently used, and this is simply the dynamic viscosity divided by the density:</p>
+<div class="math notranslate nohighlight">
+\[\nu = \frac{\mu}{\rho}.\]</div>
+<p><span class="math notranslate nohighlight">\(\nu\)</span> has units of m<span class="math notranslate nohighlight">\(^2\)</span>/s, or ft<span class="math notranslate nohighlight">\(^2\)</span>/s.</p>
+<p>todo: list of viscosities, or plots
+todo: heat and mass transfer analogies</p>
+</div>
 </div>
 </div>
 
