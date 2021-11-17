@@ -32,22 +32,28 @@ m = \int_V \rho(\mathbf{x})dV.
 
 In using the density this way in Eq. {eq}`eq:m_rho`, we are implicitly assuming the contiuum assumption holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings.
 
+### Units
+Common units of $\rho$ are 
+* kg/m$^3$
+* lbm/ft$^3$
+
 ### Ideal gases
 The ideal gas law is commonly written as $PV = nR_gT$. We rearrange this to $n/V = P/R_gT$, which is moles per volume. Multiplying both sides by the mean molecular weight M of the gas gives
 
 $$\rho = \frac{MP}{R_gT}.$$
 
-Table {numref}`tab:fluid_densities` gives densities for several fluids. Note that the difference in density between air and water is nearly a factor of one thousand. This allows important assumptions and simplifications in some calculations. This is illustrated in {numref}`fig:air_water_vol_comparison`
+Table {numref}`t:fluid_densities` gives densities for several fluids. Note that the difference in density between air and water is nearly a factor of one thousand. This allows important assumptions and simplifications in some calculations. This is illustrated in {numref}`fig:air_water_vol_comparison`
 
 ```{table} Densities and specific gravities of several fluids.
-:name: tab:fluid_densities
+:name: t:fluid_densities
 
 | fluid                     | $\rho$ (kg/m$^3$) | $\rho$ (lbm/ft$^3$) | SG          |
 |:--------------------------|:-----------------:|:-------------------:|:-----------:|
-| water (20 $^o$C, 1 atm)   | 998               | 63.3                | 0.998       |
+| water (20 $^o$C, 1 atm)   | 998.19            | 63.3                | 0.998       |
+| ethanol (20 $^o$C, 1 atm) | 789.4             | 49.28               | 0.7894      |
 | mercury (20 $^o$C, 1 atm) | 13600             | 849                 | 13.6        |
 | air (20 $^o$C, 1 atm)     | 1.204             | 0.07516             | 0.001204    |
-| CO$_2$ (20 $^o$C, 1 atm)  | 1.830             | 0.1142              | 0.00183     |
+| CO$_2$ (20 $^o$C, 1 atm)  | 1.830             | 0.1142              | 0.001830    |
 
 ```
 
@@ -68,12 +74,12 @@ Relative volumes of air and water for equal masses.
 :name: eq:sg
 SG = \frac{\rho}{\rho_\text{H2O}}
 ```
-Table {numref}`tab:fluid_densities` shows SG values for several common fluids.
+Table {numref}`t:fluid_densities` shows SG values for several common fluids.
 
 <div>
 <button class="expandable">A more extensive list of fluid densities is available here</button>
 <div class="expandable_content">
-<iframe src="https://en.wikipedia.org/wiki/Density#Densities" width=100% height=300px></iframe>
+<iframe src="https://en.wikipedia.org/wiki/Density#Densities" width=100% height=500px></iframe>
 </div>
 </div>
 
@@ -121,7 +127,6 @@ We have the following:
 * $\mu$ is a proportionality constant relating $\tau$ to $du/dy$, and for given area and $du/dy$, a doubling of $\mu$ doubles the required force.
 
 ### Units
-
 The units of $\mu$ are 
 * kg/(m$\cdot$s) = Pa$\cdot$s (SI units).
 * lbm/(ft$\cdot$s) (US units).
@@ -135,5 +140,28 @@ $$\nu = \frac{\mu}{\rho}.$$
 
 $\nu$ has units of m$^2$/s, or ft$^2$/s.
 
-todo: list of viscosities, or plots
-todo: heat and mass transfer analogies
+Table {numref}`t:fluid_viscosities` shows a list of dynamic and kinematic viscosities for several fluids. Note the large difference between the gases (air and CO$_2$) and the liquids, with the liquids having much higher dynamic viscosities, but smaller kinematic viscosities.
+
+```{table} Viscosities of several fluids.
+:name: t:fluid_viscosities
+
+| fluid                     | $\mu$ (Pa$\cdot$s)| $\mu$ (lbm/ft$\cdot$s) | $\nu$ (m$^2$/s) | $\nu$ (ft$^2$/s) |
+|:--------------------------|:-----------------:|:----------------------:|:---------------:| :---------------:|
+| water (20 $^o$C, 1 atm)   | 1.0016E-3         |   6.7304E-4            | 1.0034E-6       |  1.0800E-5       |
+| ethanol (20 $^o$C, 1 atm) | 1.1841E-3         |   7.9568E-4            | 1.5000E-6       |  1.6146E-5       |
+| mercury (20 $^o$C, 1 atm) | 1.552E-3          |  10.43E-4              | 0.11412E-6      |  0.12284E-5      |
+| air (20 $^o$C, 1 atm)     | 1.83E-5           |   1.23E-5              | 1.52E-5         |  1.64E-4         |
+| CO$_2$ (20 $^o$C, 1 atm)  | 1.47E-5           |   0.988E-5             | 0.803E-5        |  0.865E-4        |
+
+```
+
+<div>
+<button class="expandable">A more extensive list of fluid viscosities is available here</button>
+<div class="expandable_content">
+<iframe src="https://en.wikipedia.org/wiki/List_of_viscosities" width=100% height=500px></iframe>
+</div>
+</div>
+
+
+<!-- todo: plots versus temperature -->
+<!-- todo: heat and mass transfer analogies -->
