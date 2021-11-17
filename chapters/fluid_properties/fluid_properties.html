@@ -238,13 +238,18 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#units">
+     1.1.1. Units
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#ideal-gases">
-     1.1.1. Ideal gases
+     1.1.2. Ideal gases
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#specific-gravity">
-     1.1.2. Specific gravity
+     1.1.3. Specific gravity
     </a>
    </li>
   </ul>
@@ -255,7 +260,7 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#units">
+    <a class="reference internal nav-link" href="#id1">
      1.2.1. Units
     </a>
    </li>
@@ -289,14 +294,22 @@
 <span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-m-rho" title="Permalink to this equation">¶</a></span>\[m = \int_V \rho(\mathbf{x})dV.\]</div>
 <!--todo: add pictures for variable rho, and pointwise >> molecular spacing -->
 <p>In using the density this way in Eq. <a class="reference internal" href="#equation-eq-m-rho">(1.1)</a>, we are implicitly assuming the contiuum assumption holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings.</p>
+<div class="section" id="units">
+<h3><span class="section-number">1.1.1. </span>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
+<p>Common units of <span class="math notranslate nohighlight">\(\rho\)</span> are</p>
+<ul class="simple">
+<li><p>kg/m<span class="math notranslate nohighlight">\(^3\)</span></p></li>
+<li><p>lbm/ft<span class="math notranslate nohighlight">\(^3\)</span></p></li>
+</ul>
+</div>
 <div class="section" id="ideal-gases">
-<h3><span class="section-number">1.1.1. </span>Ideal gases<a class="headerlink" href="#ideal-gases" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">1.1.2. </span>Ideal gases<a class="headerlink" href="#ideal-gases" title="Permalink to this headline">¶</a></h3>
 <p>The ideal gas law is commonly written as <span class="math notranslate nohighlight">\(PV = nR_gT\)</span>. We rearrange this to <span class="math notranslate nohighlight">\(n/V = P/R_gT\)</span>, which is moles per volume. Multiplying both sides by the mean molecular weight M of the gas gives</p>
 <div class="math notranslate nohighlight">
 \[\rho = \frac{MP}{R_gT}.\]</div>
-<p>Table <a class="reference internal" href="#tab-fluid-densities"><span class="std std-numref">Table 1.1</span></a> gives densities for several fluids. Note that the difference in density between air and water is nearly a factor of one thousand. This allows important assumptions and simplifications in some calculations. This is illustrated in <a class="reference internal" href="#fig-air-water-vol-comparison"><span class="std std-numref">Fig. 1.1</span></a></p>
-<table class="colwidths-auto table" id="tab-fluid-densities">
-<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Densities and specific gravities of several fluids.</span><a class="headerlink" href="#tab-fluid-densities" title="Permalink to this table">¶</a></caption>
+<p>Table <a class="reference internal" href="#t-fluid-densities"><span class="std std-numref">Table 1.1</span></a> gives densities for several fluids. Note that the difference in density between air and water is nearly a factor of one thousand. This allows important assumptions and simplifications in some calculations. This is illustrated in <a class="reference internal" href="#fig-air-water-vol-comparison"><span class="std std-numref">Fig. 1.1</span></a></p>
+<table class="colwidths-auto table" id="t-fluid-densities">
+<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Densities and specific gravities of several fluids.</span><a class="headerlink" href="#t-fluid-densities" title="Permalink to this table">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>fluid</p></th>
 <th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\rho\)</span> (kg/m<span class="math notranslate nohighlight">\(^3\)</span>)</p></th>
@@ -306,24 +319,29 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p>water (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
-<td class="text-align:center"><p>998</p></td>
+<td class="text-align:center"><p>998.19</p></td>
 <td class="text-align:center"><p>63.3</p></td>
 <td class="text-align:center"><p>0.998</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>mercury (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>ethanol (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<td class="text-align:center"><p>789.4</p></td>
+<td class="text-align:center"><p>49.28</p></td>
+<td class="text-align:center"><p>0.7894</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>mercury (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
 <td class="text-align:center"><p>13600</p></td>
 <td class="text-align:center"><p>849</p></td>
 <td class="text-align:center"><p>13.6</p></td>
 </tr>
-<tr class="row-even"><td class="text-align:left"><p>air (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>air (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
 <td class="text-align:center"><p>1.204</p></td>
 <td class="text-align:center"><p>0.07516</p></td>
 <td class="text-align:center"><p>0.001204</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>CO<span class="math notranslate nohighlight">\(_2\)</span> (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<tr class="row-even"><td class="text-align:left"><p>CO<span class="math notranslate nohighlight">\(_2\)</span> (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
 <td class="text-align:center"><p>1.830</p></td>
 <td class="text-align:center"><p>0.1142</p></td>
-<td class="text-align:center"><p>0.00183</p></td>
+<td class="text-align:center"><p>0.001830</p></td>
 </tr>
 </tbody>
 </table>
@@ -335,15 +353,15 @@
 -->
 </div>
 <div class="section" id="specific-gravity">
-<h3><span class="section-number">1.1.2. </span>Specific gravity<a class="headerlink" href="#specific-gravity" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">1.1.3. </span>Specific gravity<a class="headerlink" href="#specific-gravity" title="Permalink to this headline">¶</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Relative_density" target="_blank">Specific gravity</a> is density divided by a reference density, usually water at 4 <span class="math notranslate nohighlight">\(^o\)</span>C which has a density of 1000 kg/m<span class="math notranslate nohighlight">\(^3\)</span>. That is</p>
 <div class="math notranslate nohighlight" id="eq-sg">
 <span id="equation-eq-sg"></span><span class="eqno">(1.2)<a class="headerlink" href="#eq-sg" title="Permalink to this equation">¶</a></span>\[SG = \frac{\rho}{\rho_\text{H2O}}\]</div>
-<p>Table <a class="reference internal" href="#tab-fluid-densities"><span class="std std-numref">Table 1.1</span></a> shows SG values for several common fluids.</p>
+<p>Table <a class="reference internal" href="#t-fluid-densities"><span class="std std-numref">Table 1.1</span></a> shows SG values for several common fluids.</p>
 <div>
 <button class="expandable">A more extensive list of fluid densities is available here</button>
 <div class="expandable_content">
-<iframe src="https://en.wikipedia.org/wiki/Density#Densities" width=100% height=300px></iframe>
+<iframe src="https://en.wikipedia.org/wiki/Density#Densities" width=100% height=500px></iframe>
 </div>
 </div>
 <!-- <span class="hoverme">Hover over me<br></span> -->
@@ -377,8 +395,8 @@ F = \tau A = -\mu A\frac{du}{dy}.
 <li><p>the forces involved are frictional.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\mu\)</span> is a proportionality constant relating <span class="math notranslate nohighlight">\(\tau\)</span> to <span class="math notranslate nohighlight">\(du/dy\)</span>, and for given area and <span class="math notranslate nohighlight">\(du/dy\)</span>, a doubling of <span class="math notranslate nohighlight">\(\mu\)</span> doubles the required force.</p></li>
 </ul>
-<div class="section" id="units">
-<h3><span class="section-number">1.2.1. </span>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3><span class="section-number">1.2.1. </span>Units<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>The units of <span class="math notranslate nohighlight">\(\mu\)</span> are</p>
 <ul class="simple">
 <li><p>kg/(m<span class="math notranslate nohighlight">\(\cdot\)</span>s) = Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s (SI units).</p></li>
@@ -392,9 +410,58 @@ F = \tau A = -\mu A\frac{du}{dy}.
 <div class="math notranslate nohighlight">
 \[\nu = \frac{\mu}{\rho}.\]</div>
 <p><span class="math notranslate nohighlight">\(\nu\)</span> has units of m<span class="math notranslate nohighlight">\(^2\)</span>/s, or ft<span class="math notranslate nohighlight">\(^2\)</span>/s.</p>
-<p>todo: list of viscosities, or plots
-todo: heat and mass transfer analogies</p>
+<p>Table <a class="reference internal" href="#t-fluid-viscosities"><span class="std std-numref">Table 1.2</span></a> shows a list of dynamic and kinematic viscosities for several fluids. Note the large difference between the gases (air and CO<span class="math notranslate nohighlight">\(_2\)</span>) and the liquids, with the liquids having much higher dynamic viscosities, but smaller kinematic viscosities.</p>
+<table class="colwidths-auto table" id="t-fluid-viscosities">
+<caption><span class="caption-number">Table 1.2 </span><span class="caption-text">Viscosities of several fluids.</span><a class="headerlink" href="#t-fluid-viscosities" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>fluid</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\mu\)</span> (Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s)</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\mu\)</span> (lbm/ft<span class="math notranslate nohighlight">\(\cdot\)</span>s)</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\nu\)</span> (m<span class="math notranslate nohighlight">\(^2\)</span>/s)</p></th>
+<th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\nu\)</span> (ft<span class="math notranslate nohighlight">\(^2\)</span>/s)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>water (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<td class="text-align:center"><p>1.0016E-3</p></td>
+<td class="text-align:center"><p>6.7304E-4</p></td>
+<td class="text-align:center"><p>1.0034E-6</p></td>
+<td class="text-align:center"><p>1.0800E-5</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>ethanol (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<td class="text-align:center"><p>1.1841E-3</p></td>
+<td class="text-align:center"><p>7.9568E-4</p></td>
+<td class="text-align:center"><p>1.5000E-6</p></td>
+<td class="text-align:center"><p>1.6146E-5</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>mercury (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<td class="text-align:center"><p>1.552E-3</p></td>
+<td class="text-align:center"><p>10.43E-4</p></td>
+<td class="text-align:center"><p>0.11412E-6</p></td>
+<td class="text-align:center"><p>0.12284E-5</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>air (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<td class="text-align:center"><p>1.83E-5</p></td>
+<td class="text-align:center"><p>1.23E-5</p></td>
+<td class="text-align:center"><p>1.52E-5</p></td>
+<td class="text-align:center"><p>1.64E-4</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>CO<span class="math notranslate nohighlight">\(_2\)</span> (20 <span class="math notranslate nohighlight">\(^o\)</span>C, 1 atm)</p></td>
+<td class="text-align:center"><p>1.47E-5</p></td>
+<td class="text-align:center"><p>0.988E-5</p></td>
+<td class="text-align:center"><p>0.803E-5</p></td>
+<td class="text-align:center"><p>0.865E-4</p></td>
+</tr>
+</tbody>
+</table>
+<div>
+<button class="expandable">A more extensive list of fluid viscosities is available here</button>
+<div class="expandable_content">
+<iframe src="https://en.wikipedia.org/wiki/List_of_viscosities" width=100% height=500px></iframe>
 </div>
+</div>
+<!-- todo: plots versus temperature -->
+<!-- todo: heat and mass transfer analogies --></div>
 </div>
 </div>
 
