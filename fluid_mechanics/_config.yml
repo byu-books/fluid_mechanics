@@ -1,3 +1,5 @@
+#----- Modifying defaults: https://jupyterbook.org/en/stable/customize/config.html
+
 title      : Fluid Mechanics for Engineers
 author     : David O. Lignell
 copyright  : "2021"
@@ -15,17 +17,23 @@ html:                              # github buttons
   use_repository_button:   true
   use_edit_page_button:    true
   extra_navbar:            ""
+  baseurl:                 "fluidsbook.com"
 
 
 only_build_toc_files: true
 
+#----- see https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
 parse:
-  myst_extended_syntax: true        # needed for html image parsing (at least)
+  myst_extended_extensions:
+    - amsmath
 
 launch_buttons:
     thebe: true
 
+#----- see https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_extra_path
+# note the double quotes are to allow the async attribute.
+# we want the html script line to be: <script src="../../_static/expandable.js" async="async"></script>
+# Whatever is between the single quotes below is put as: <script src="stuff_between_single_quotes"></script>
 sphinx:
   config:
-    html_js_files: "expandable.js\" async=\"async"
-
+      html_js_files: ['expandable.js" async="async']
