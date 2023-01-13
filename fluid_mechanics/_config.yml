@@ -36,4 +36,4 @@ launch_buttons:
 # Whatever is between the single quotes below is put as: <script src="stuff_between_single_quotes"></script>
 sphinx:
   config:
-      html_js_files: ['expandable.js" async="async']
+    html_js_files: ['expandable.js" async="async']
