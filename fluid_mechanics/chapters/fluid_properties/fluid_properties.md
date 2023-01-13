@@ -41,6 +41,58 @@ Common units of $\rho$ are
 * kg/m$^3$
 * lbm/ft$^3$
 
+<!---------------------------------------------------------------------------->
+
+### Example: water density
+Think about an experiment you could perform to measure the density of water. 
+What equipment would you need? How would you do it? What calculations would you do?
+What equation would be used? How would you know if you are right?
+
+<div>
+<button class="expandable">Solution</button>
+<div class="expandable_example_content">
+
+```{image} fig_water_density.png
+:width: 600px
+:align: center
+```
+
+Measure the mass and volume of water. Then the density is $\rho = m/V$.
+
+In the image, the beaker is placed on the scale. Then we press the *tare* button to reset the scale to zero. A graduated cylinder is used to measure **V=60 ml** of water. This is added to the beaker and we measure the mass to be **m=59.34 g**. The density is then
+
+$$\rho = \frac{59.34\, \mathrm{g}}{60\, \mathrm{ml}} = 0.989\,\mathrm{g/ml} = 989\,\mathrm{kg/m}^3=61.7\,\mathrm{lbm/ft}^3$$
+
+This is compared to the literature value of 998 kg/m$^3$ at 70 $^o$F. The difference is due to experimental error: error in the scale and visual error in computing the volume. The relative error is (989-998)/998 * 100\% = -0.9\%. 
+
+</div>
+</div>
+
+<!---------------------------------------------------------------------------->
+
+### Example: particle density and bulk density of sand
+Think about an experiment to measure the density of sand.
+How is this different than measuring the density of water?
+What can you do to account for these differences?
+
+<div>
+<button class="expandable">Solution</button>
+<div class="expandable_example_content">
+
+Sand particles form a collection that is porous with many air spaces between the sand particles.
+We can define two densities: 
+1. the **particle or material density** is the density of a single particle.
+2. the **bulk density** is the density of the combined sand/air mixture.
+
+Consider the particle density. It would be very hard to accurately measure the density of a single particle because it is so small. The average particle density could be measured as $\rho=m_s/V_s$, where $m_s$ is the mass of just the sand and $V_s$ is the volume of just the sand in a sand/air mixture. 
+- The mass of just the sand is probably very close to the mass of the sand/air mixture because we expect the air to weigh much less than the sand, probably within our measurement error.
+- For the volume, we have $V_\mathrm{total}=V_\mathrm{s}+V_\mathrm{a}$. We can measure the total volume, then add a known volume of water to displace the air--until the water *just* covers the sand after mixing it up and letting it settle.
+
+</div>
+</div>
+
+<!---------------------------------------------------------------------------->
+
 ### Ideal gases
 The ideal gas law is commonly written as $PV = nR_gT$. We rearrange this to $n/V = P/R_gT$, which is moles per volume. Multiplying both sides by the mean molecular weight M of the gas gives
 
@@ -51,7 +103,7 @@ Table {numref}`t:fluid_densities` gives densities for several fluids. Note that 
 ```{table} Densities and specific gravities of several fluids.
 :name: t:fluid_densities
 
-| fluid                     | $\rho$ (kg/m$^3$) | $\rho$ (lbm/ft$^3$) | SG          |
+| Fluid                     | $\rho$ (kg/m$^3$) | $\rho$ (lbm/ft$^3$) | SG          |
 |:--------------------------|:-----------------:|:-------------------:|:-----------:|
 | water (20 $^o$C, 1 atm)   | 998.19            | 63.3                | 0.998       |
 | ethanol (20 $^o$C, 1 atm) | 789.4             | 49.28               | 0.7894      |
@@ -126,11 +178,20 @@ $$
 F = \tau A = -\mu A\frac{du}{dy}.
 $$
 
-We have the following:
-* for a given plate area and given $\mu$, a higher plate velocity gives higher strain rate $du/dy$, requiring more force. 
-* the force required is proportional to the plate area.
-* the forces involved are frictional.
-* $\mu$ is a proportionality constant relating $\tau$ to $du/dy$, and for given area and $du/dy$, a doubling of $\mu$ doubles the required force.
+Questions:
+* for a given plate area and a given $\mu$, if we double the velocity, what happens to $du/dy$ and the resultant force $F$?
+* If we double $A$, what happens to $F$, all else being equal?
+* If we double $\mu$, what happens to $F$, all else being equal?
+
+Note, the forces involved here are frictional, that is, the force of friction due to the moving fluid. This can be described in terms of molecular collisions between faster moving fluid molecules at higher $y$ being slowed by interactions with slower moving molecules at lower $y$.
+
+### $\tau$ is a momentum flux
+
+From Newton's second law we have $F=ma$ or for constant $m$ and $a=dv/dt$, $F=d(mv)/dt$. Since $mv$ is momentum, the force is a rate of change of momentum. Then $F/A = \tau$ is a rate of change of momentum per unit area. That is, $\tau$ is a momentum flux. We can write
+
+$$\tau = -\mu\frac{du}{dy},$$
+
+as an equation for momentum flux. This can be compared to conductive heat flux and diffusive mass flux, which have similar equations. In the Couette flow above, if we take $u$ to be in the positve direction as shown, then $du/dy$ is positive and $F$ will be negative. The *fluid* exerts a negative force to the lefft on the plate, which is balanced by the *external* force pulling the plate to the right.
 
 ### Units
 The units of $\mu$ are 
