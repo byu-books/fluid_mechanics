@@ -13,9 +13,9 @@ kernelspec:
   name: python3
 ---
 
-# Fluid Properties
+<h1>Fluid Properties</h1>
 
-## Density
+# Density
 
 The density $\rho$ of a fluid is the mass of the fluid per unit volume:
 
@@ -32,12 +32,12 @@ m = \int_V \rho(\mathbf{x})dV.
 
 In using the density this way in Eq. {eq}`eq:m_rho`, we are implicitly assuming the contiuum assumption holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings.
 
-### Units
+## Units
 Common units of $\rho$ are 
 * kg/m$^3$
 * lbm/ft$^3$
 
-### Ideal gases
+## Ideal gases
 The ideal gas law is commonly written as $PV = nR_gT$. We rearrange this to $n/V = P/R_gT$, which is moles per volume. Multiplying both sides by the mean molecular weight M of the gas gives
 
 $$\rho = \frac{MP}{R_gT}.$$
@@ -68,7 +68,7 @@ Relative volumes of air and water for equal masses.
 <!--todo: show how density of water and air change with temperature and pressure
 -->
 
-### Specific gravity
+## Specific gravity
 <a href="https://en.wikipedia.org/wiki/Relative_density" target="_blank">Specific gravity</a> is density divided by a reference density, usually water at 4 $^o$C which has a density of 1000 kg/m$^3$. That is
 ```{math}
 :name: eq:sg
@@ -86,7 +86,7 @@ Table {numref}`t:fluid_densities` shows SG values for several common fluids.
 <!-- <span class="hoverme">Hover over me<br></span> -->
 <!-- <span class="hide"> isnt this fun! </span> -->
 
-## Viscosity
+# Viscosity
 The viscosity $\mu$ of a fluid is a measure of the resistance to flow. Higher viscosity fluids have higher flow friction and are more resistant to deformation. Honey has a high viscosity compared to water. See {numref}`fig:viscosity_demo` for a simulation illustrating two fluids of different viscosities.
 
 ```{figure} Viscosities.gif
@@ -104,7 +104,8 @@ Viscosity is precisely defined for a *Newtonian fluid* which obeys the relation
 \tau = -\mu\frac{du}{dy}.
 ```
 
-Here, $\tau$ is the shear stress, $u$ is a velocity, and $y$ is a directional coordinate. These quantities are illustrated in {numref}`fig:couette_plates`. The figure illustrates the flow between infinite parallel plates where the lower plate is fixed and the upper plate moves at some velocity $u$. This is a so-called *[Couette flow](https://en.wikipedia.org/wiki/Couette_flow)*. 
+Here, $\tau$ is the shear stress, $u$ is a velocity, and $y$ is a directional coordinate. These quantities are illustrated in {numref}`fig:couette_plates`. The figure illustrates the flow between infinite parallel plates where the lower plate is fixed and the upper plate moves at some velocity $u$. This is a so-called 
+*<a href=https://en.wikipedia.org/wiki/Couette_flow target=_blank>Couette flow</a>*.
 
 ```{figure} fig_couette_plates.svg
 ---
@@ -126,13 +127,13 @@ We have the following:
 * the forces involved are frictional.
 * $\mu$ is a proportionality constant relating $\tau$ to $du/dy$, and for given area and $du/dy$, a doubling of $\mu$ doubles the required force.
 
-### Units
+## Units
 The units of $\mu$ are 
 * kg/(m$\cdot$s) = Pa$\cdot$s (SI units).
 * lbm/(ft$\cdot$s) (US units).
 * poise (P) or centipoise (cP), with 1 P = 0.1 Pa$\cdot$s, and 1 cP = 0.001 Pa$\cdot$s
 
-### Kinematic viscosity
+## Kinematic viscosity
 
 The viscosity $\mu$ discussed above is called the *dynamic* viscosity. The kinematic viscosity $\nu$ is frequently used, and this is simply the dynamic viscosity divided by the density:
 
