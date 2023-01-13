@@ -13,9 +13,13 @@ kernelspec:
   name: python3
 ---
 
-<h1>Fluid Properties</h1>
+# Fluid Properties
 
-# Density
+## Density
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r0Ej0xB-0C8?start=4&end=247" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+--------------------
 
 The density $\rho$ of a fluid is the mass of the fluid per unit volume:
 
@@ -32,12 +36,12 @@ m = \int_V \rho(\mathbf{x})dV.
 
 In using the density this way in Eq. {eq}`eq:m_rho`, we are implicitly assuming the contiuum assumption holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings.
 
-## Units
+### Units
 Common units of $\rho$ are 
 * kg/m$^3$
 * lbm/ft$^3$
 
-## Ideal gases
+### Ideal gases
 The ideal gas law is commonly written as $PV = nR_gT$. We rearrange this to $n/V = P/R_gT$, which is moles per volume. Multiplying both sides by the mean molecular weight M of the gas gives
 
 $$\rho = \frac{MP}{R_gT}.$$
@@ -68,12 +72,13 @@ Relative volumes of air and water for equal masses.
 <!--todo: show how density of water and air change with temperature and pressure
 -->
 
-## Specific gravity
+### Specific gravity
 <a href="https://en.wikipedia.org/wiki/Relative_density" target="_blank">Specific gravity</a> is density divided by a reference density, usually water at 4 $^o$C which has a density of 1000 kg/m$^3$. That is
 ```{math}
 :name: eq:sg
 SG = \frac{\rho}{\rho_\text{H2O}}
 ```
+So, a material with a specific gravity of 1 has the same density as water. A material with a specific gravity of 5 has a density five times that of water.
 Table {numref}`t:fluid_densities` shows SG values for several common fluids.
 
 <div>
@@ -86,7 +91,7 @@ Table {numref}`t:fluid_densities` shows SG values for several common fluids.
 <!-- <span class="hoverme">Hover over me<br></span> -->
 <!-- <span class="hide"> isnt this fun! </span> -->
 
-# Viscosity
+## Viscosity
 The viscosity $\mu$ of a fluid is a measure of the resistance to flow. Higher viscosity fluids have higher flow friction and are more resistant to deformation. Honey has a high viscosity compared to water. See {numref}`fig:viscosity_demo` for a simulation illustrating two fluids of different viscosities.
 
 ```{figure} Viscosities.gif
@@ -127,13 +132,13 @@ We have the following:
 * the forces involved are frictional.
 * $\mu$ is a proportionality constant relating $\tau$ to $du/dy$, and for given area and $du/dy$, a doubling of $\mu$ doubles the required force.
 
-## Units
+### Units
 The units of $\mu$ are 
 * kg/(m$\cdot$s) = Pa$\cdot$s (SI units).
 * lbm/(ft$\cdot$s) (US units).
 * poise (P) or centipoise (cP), with 1 P = 0.1 Pa$\cdot$s, and 1 cP = 0.001 Pa$\cdot$s
 
-## Kinematic viscosity
+### Kinematic viscosity
 
 The viscosity $\mu$ discussed above is called the *dynamic* viscosity. The kinematic viscosity $\nu$ is frequently used, and this is simply the dynamic viscosity divided by the density:
 
