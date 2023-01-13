@@ -34,7 +34,7 @@ m = \int_V \rho(\mathbf{x})dV.
 
 <!--todo: add pictures for variable rho, and pointwise >> molecular spacing -->
 
-In using the density this way in Eq. {eq}`eq:m_rho`, we are implicitly assuming the contiuum assumption holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings.
+In using the density this way in Eq. {eq}`eq:m_rho`, we are implicitly assuming the **contiuum assumption** holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings. For example, air is mostly nitrogen N$_2$ which has a <a href="https://en.wikipedia.org/wiki/Kinetic_diameter" target=_blank>kinetic diameter</a> of 3.64E-10 m. In nitrogen gas at 298 K and 1 atm, there are 2.46E25 molecules per m$^3$. This gives a distance between molecules of approximately 34E-10 m. The distance between molecules is about ten times the size of the molecules. These distances are usually much smaller than flow scales in a fluid, so we assume the fluid is a continuum, without explicitly considering its molecular structure. In liquids, the intermolecular spacing is even smaller, and is similar to the molecular size.
 
 ### Units
 Common units of $\rho$ are 
@@ -86,7 +86,7 @@ We can define two densities:
 
 Consider the particle density. It would be very hard to accurately measure the density of a single particle because it is so small. The average particle density could be measured as $\rho=m_s/V_s$, where $m_s$ is the mass of just the sand and $V_s$ is the volume of just the sand in a sand/air mixture. 
 - The mass of just the sand is probably very close to the mass of the sand/air mixture because we expect the air to weigh much less than the sand, probably within our measurement error.
-- For the volume, we have $V_\mathrm{total}=V_\mathrm{s}+V_\mathrm{a}$. We can measure the total volume, then add a known volume of water to displace the air--until the water *just* covers the sand after mixing it up and letting it settle.
+- For the volume, we have $V_\mathrm{total}=V_\mathrm{s}+V_\mathrm{a}$. We can measure the total volume, then add a known volume of water to displace the air---until the water *just* covers the sand after mixing it up and letting it settle.
 
 </div>
 </div>
@@ -187,7 +187,7 @@ Note, the forces involved here are frictional, that is, the force of friction du
 
 ### $\tau$ is a momentum flux
 
-From Newton's second law we have $F=ma$ or for constant $m$ and $a=dv/dt$, $F=d(mv)/dt$. Since $mv$ is momentum, the force is a rate of change of momentum. Then $F/A = \tau$ is a rate of change of momentum per unit area. That is, $\tau$ is a momentum flux. We can write
+From Newton's second law, we have $F=ma$, or, for constant $m$ and $a=dv/dt$, $F=d(mv)/dt$. Since $mv$ is momentum, the force is a rate of change of momentum. Then $F/A = \tau$ is a rate of change of momentum per unit area. That is, $\tau$ is a momentum flux. We can write
 
 $$\tau = -\mu\frac{du}{dy},$$
 
