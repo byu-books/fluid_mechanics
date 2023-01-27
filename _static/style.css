@@ -27,36 +27,79 @@ table p {
 /*------ expandable button: https://www.w3schools.com/howto/howto_js_collapsible.asp */
 
 .expandable {
-  background-color: #aaaaaa;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 8px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-  text-align: center;
+    background-color: #ddd;
+    cursor:           pointer;
+    padding:          0px 10px;
+    border:           none;
+    outline:          none;
+    border-radius:    6px;
+    font-weight:      normal;
+    text-align:       left;
 }
 
 .expandable:hover, .expandable:active {
-  background-color: #555;
-  border: none;
+    background-color: #555;
+    color:            #fff;
 }
 
 .expandable_content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+    padding: 10px 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #ddd;    
+    border-radius: 6px;
+    margin: 10px 0px 0px 0px;
 }
 
-.expandable_example_content {
-  padding: 0 36px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #d7e5f2;
+/* turn off outline of button after click */
+*:focus {
+    outline: 0 !important;
 }
+
+/*--////////////////// popup window /////////////////*/
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    min-width: 50vw;
+    background-color: #ccc;
+    color: #000;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 0%;
+    margin-left: 20px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}
+
+
+
+
 
