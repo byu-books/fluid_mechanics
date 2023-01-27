@@ -215,7 +215,7 @@ Viscosity is precisely defined for a *Newtonian fluid* which obeys the relation
 \tau = -\mu\frac{du}{dy}.
 ```
 
-Here, $\tau$ is the shear stress, $u$ is a velocity, and $y$ is a directional coordinate. These quantities are illustrated in {numref}`fig:couette_plates`. The figure illustrates the flow between infinite parallel plates where the lower plate is fixed and the upper plate moves at some velocity $u$. This is a so-called 
+Here, $\tau$ is the shear stress, $u$ is a velocity, and $y$ is a directional coordinate. Viscosity is a property of the fluid and depends on the fluid temperature, pressure, and composition. For Newtonian fluids, the visocity does not depend on the shear rate $du/dy$. These quantities are illustrated in {numref}`fig:couette_plates`. The figure illustrates the flow between infinite parallel plates where the lower plate is fixed and the upper plate moves at some velocity $u$. This is a so-called 
 *<a href=https://en.wikipedia.org/wiki/Couette_flow target=_blank>Couette flow</a>*.
 
 ```{figure} fig_couette_plates.svg
@@ -288,6 +288,85 @@ Table {numref}`t:fluid_viscosities` shows a list of dynamic and kinematic viscos
 <iframe src="https://en.wikipedia.org/wiki/List_of_viscosities" width=100% height=500px></iframe>
 </div>
 </div>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+## Surface tension
+
+Liquids are held together by *cohesive* intermolecular forces. At a fluid interface these forces are nonuniformly distributed. This happens because the forces at the fluid interface are different in directions into the fluid, out of the fluid, and along the interface. These forces can make the fluid behave as if it has a *skin*. 
+
+```{figure} surface_tension.svg
+---
+width: 50%
+name: fig:surface_tension
+---
+[Illustration](https://commons.wikimedia.org/wiki/File:Wassermolek%C3%BCleInTr%C3%B6pfchen.svg) of molecular forces in a fluid at a surface.
+```
+
+Consider a water-air interface illustrated in {numref}`fig:surface_tension`. Molecules in the interior of the fluid are pulled in all directions equally by attractive forces with other molecules. But at the fluid surface, the water molecules are only pulled along the surface and into the bulk fluid, (with negligible interactions between the water and air). These forces are the reason water droplets tend to form spheres: the attraction into the center deforms the fluid to minimize the surface area. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zMzqiAuOSz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+At a fluid-solid interace, the fluid will experience *adhesive* forces. The balance between the cohesive fluid forces and the adhesive fluid-solid forces results in interesting behavior. Water that is poured slowly from a glass will sometimes adhere to the surface and run down the side. These forces result in a meniscus when measuring liquid volumes in a graduated cylinder. When the adhesive forces are greater than the cohesive forces, the liquid climbs the sides of the glass and forms a concave surface. Otherwise a convex surface forms. See {numref}`fig:meniscus`.
+
+```{figure} meniscus.jpeg
+---
+width: 30%
+name: fig:meniscus
+---
+Mercury (left) with convex meniscus, and water (right) with a concave meniscus. Attribution: [usgs.gov](https://www.usgs.gov/media/images/water-has-upward-meniscus-mercury-has-downward-meniscus) under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/); no changes made. 
+```
+
+Adhesive forces between a fluid and a surface give rise to *capilary* action in which a fluid can climb up a surface to a height where the adhesive forces balance the weight of the fluid. 
+
+Surface tension is defined a force per unit length
+
+$$\sigma = \frac{F}{L}.$$
+
+In {numref}`fig:droplet`, the surface tension forces balance the gravitational weight of the droplet $F$, and $L=\pi D$.
+
+```{figure} droplet.svg
+---
+width: 20%
+name: fig:droplet
+---
+Surface tension forces (white) balancing the weight of a droplet (black).
+```
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+#### Example: water surface forces
+
+The surface tension of water at 20 $^o$C is 0.07275 N/m = 72.75 dyne/cm. Surface forces are usually only important at relatively small scales. Demonstrate this by computing the diameter of a sphere of water for which the weight of the sphere equals the surface forces around the circumference of the spere.
+
+<div>
+<button class="expandable">Solution</button>
+<div class="expandable_content">
+
+The weight is given by 
+
+$$W = mg = \rho_wVg = \rho_w\frac{\pi}{6}D^3g.$$
+
+The surface forces are
+
+$$F_s = \sigma L = \sigma\pi D.$$
+
+Equating these forces and solving for $D$ gives
+
+$$D = \sqrt{\frac{6\sigma}{\rho_w g}} = \sqrt{\frac{(6)(0.07275\;\mathrm{N/m})}{(998\;\mathrm{kg/m}^3) (9.81\; \mathrm{m/s}^2)}} = 0.00668\;\mathrm{m}=6.68\;\mathrm{mm}.$$
+
+A sphere of water the size of a golf ball would have a weight 41 times higher than the surface tension multiplied by the circumference.
+
+</div>
+</div>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+## Pressure
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+## Velocity
 
 
 %---- todo: plots versus temperature
