@@ -323,7 +323,7 @@ Surface tension is defined a force per unit length
 
 $$\sigma = \frac{F}{L}.$$
 
-In {numref}`fig:droplet`, the surface tension forces balance the gravitational weight of the droplet $F$, and $L=\pi D$.
+In {numref}`fig:droplet`, the surface tension forces balance the gravitational weight of the droplet $F$ and $L=\pi D$.
 
 ```{figure} droplet.svg
 ---

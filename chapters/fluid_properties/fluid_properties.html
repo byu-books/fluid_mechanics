@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1. Fluid Properties &#8212; Fluid Mechanics for Engineers</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -20,68 +18,52 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
-    <script src="../../_static/expandable.js" async="async"></script>
     <script src="../../_static/expandable.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/expandable.js" async="async"></script>
     <link rel="canonical" href="fluidsbook.com/chapters/fluid_properties/fluid_properties.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="2. Fluid Statics" href="../fluid_statics.html" />
     <link rel="prev" title="Fluid Mechanics for Engineers" href="../../title_page.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
+    <meta name="docsearch:language" content="en" />
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -90,10 +72,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -111,15 +92,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../title_page.html">
-                    Fluid Mechanics for Engineers
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../title_page.html">
+   Fluid Mechanics for Engineers
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
  <span class="caption-text">
   Chapters
  </span>
@@ -148,468 +128,215 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
             
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../../_sources/chapters/fluid_properties/fluid_properties.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/chapters/fluid_properties/fluid_properties.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/byu-books/fluid_mechanics"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/byu-books/fluid_mechanics/issues/new?title=Issue%20on%20page%20%2Fchapters/fluid_properties/fluid_properties.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/byu-books/fluid_mechanics/edit/master/chapters/fluid_properties/fluid_properties.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/byu-books/fluid_mechanics/master?urlpath=tree/chapters/fluid_properties/fluid_properties.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#density">
+   1.1. Density
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#units">
+     1.1.1. Units
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-water-density">
+       Example: water density
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-particle-density-and-bulk-density-of-sand">
+       Example: particle density and bulk density of sand
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ideal-gases">
+     1.1.2. Ideal gases
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-air-density">
+       Example: air density
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#specific-gravity">
+     1.1.3. Specific gravity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viscosity">
+   1.2. Viscosity
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tau-is-a-momentum-flux">
+     1.2.1.
+     <span class="math notranslate nohighlight">
+      \(\tau\)
+     </span>
+     is a momentum flux
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     1.2.2. Units
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kinematic-viscosity">
+     1.2.3. Kinematic viscosity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#surface-tension">
+   1.3. Surface tension
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-water-surface-forces">
+     1.3.1. Example: water surface forces
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pressure">
+   1.4. Pressure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#velocity">
+   1.5. Velocity
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
-    <div id="rtd-footer-container"></div>
 </div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/byu-books/fluid_mechanics/master?urlpath=tree/chapters/fluid_properties/fluid_properties.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="initThebeSBT()"
-  class="headerbtn headerbtn-launch-thebe"
-  data-toggle="tooltip"
-data-placement="left"
-title="Launch Thebe"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-play"></i>
-  </span>
-<span class="headerbtn__text-container">Live Code</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/byu-books/fluid_mechanics"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/byu-books/fluid_mechanics/issues/new?title=Issue%20on%20page%20%2Fchapters/fluid_properties/fluid_properties.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/byu-books/fluid_mechanics/edit/master/chapters/fluid_properties/fluid_properties.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/chapters/fluid_properties/fluid_properties.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../../_sources/chapters/fluid_properties/fluid_properties.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#density">
-   1.1. Density
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#units">
-     1.1.1. Units
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#example-water-density">
-       Example: water density
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#example-particle-density-and-bulk-density-of-sand">
-       Example: particle density and bulk density of sand
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ideal-gases">
-     1.1.2. Ideal gases
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#example-air-density">
-       Example: air density
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#specific-gravity">
-     1.1.3. Specific gravity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#viscosity">
-   1.2. Viscosity
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#tau-is-a-momentum-flux">
-     1.2.1.
-     <span class="math notranslate nohighlight">
-      \(\tau\)
-     </span>
-     is a momentum flux
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     1.2.2. Units
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kinematic-viscosity">
-     1.2.3. Kinematic viscosity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#surface-tension">
-   1.3. Surface tension
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-water-surface-forces">
-     1.3.1. Example: water surface forces
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pressure">
-   1.4. Pressure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#velocity">
-   1.5. Velocity
-  </a>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Fluid Properties</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#density">
-   1.1. Density
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#units">
-     1.1.1. Units
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#example-water-density">
-       Example: water density
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#example-particle-density-and-bulk-density-of-sand">
-       Example: particle density and bulk density of sand
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ideal-gases">
-     1.1.2. Ideal gases
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#example-air-density">
-       Example: air density
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#specific-gravity">
-     1.1.3. Specific gravity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#viscosity">
-   1.2. Viscosity
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#tau-is-a-momentum-flux">
-     1.2.1.
-     <span class="math notranslate nohighlight">
-      \(\tau\)
-     </span>
-     is a momentum flux
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     1.2.2. Units
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#kinematic-viscosity">
-     1.2.3. Kinematic viscosity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#surface-tension">
-   1.3. Surface tension
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-water-surface-forces">
-     1.3.1. Example: water surface forces
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pressure">
-   1.4. Pressure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#velocity">
-   1.5. Velocity
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
-                
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="fluid-properties">
-<h1><span class="section-number">1. </span>Fluid Properties<a class="headerlink" href="#fluid-properties" title="Permalink to this headline">#</a></h1>
-<section id="density">
-<h2><span class="section-number">1.1. </span>Density<a class="headerlink" href="#density" title="Permalink to this headline">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="fluid-properties">
+<h1><span class="section-number">1. </span>Fluid Properties<a class="headerlink" href="#fluid-properties" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="density">
+<h2><span class="section-number">1.1. </span>Density<a class="headerlink" href="#density" title="Permalink to this headline">¶</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r0Ej0xB-0C8?start=4&end=247" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <hr class="docutils" />
 <p>The density <span class="math notranslate nohighlight">\(\rho\)</span> of a fluid is the mass of the fluid per unit volume:</p>
@@ -617,17 +344,17 @@ title="Print to PDF"
 \[\rho = \frac{m}{V}.\]</div>
 <p>Density is a point property in the sense that to get mass we have to multiply <span class="math notranslate nohighlight">\(\rho\)</span> by some volume. If the density is spatially uniform, we have <span class="math notranslate nohighlight">\(m=\rho V\)</span>. For a differential volume element <span class="math notranslate nohighlight">\(dV\)</span>, we have <span class="math notranslate nohighlight">\(dm = \rho dV\)</span>, and the mass over some finite volume can be evaluated by integration:</p>
 <div class="math notranslate nohighlight" id="equation-eq-m-rho">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-m-rho" title="Permalink to this equation">#</a></span>\[m = \int_V \rho(\mathbf{x})dV.\]</div>
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-m-rho" title="Permalink to this equation">¶</a></span>\[m = \int_V \rho(\mathbf{x})dV.\]</div>
 <p>In using the density this way in Eq. <a class="reference internal" href="#equation-eq-m-rho">(1.1)</a>, we are implicitly assuming the <strong>contiuum assumption</strong> holds. That is, all spatial variations in the density are at scales much larger that molecular sizes and spacings. For example, air is mostly nitrogen <span class="math notranslate nohighlight">\(\ce{N2}\)</span> which has a <a href="https://en.wikipedia.org/wiki/Kinetic_diameter" target=_blank>kinetic diameter</a> of 3.64E-10 m. In nitrogen gas at 298 K and 1 atm, there are 2.46E25 molecules per m<span class="math notranslate nohighlight">\(^3\)</span>. This gives a distance between molecules of approximately 34E-10 m. The distance between molecules is about ten times the size of the molecules. These distances are usually much smaller than flow scales in a fluid, so we assume the fluid is a continuum, without explicitly considering its molecular structure. In liquids, the intermolecular spacing is even smaller, and is similar to the molecular size.</p>
-<section id="units">
-<h3><span class="section-number">1.1.1. </span>Units<a class="headerlink" href="#units" title="Permalink to this headline">#</a></h3>
+<div class="section" id="units">
+<h3><span class="section-number">1.1.1. </span>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
 <p>Common units of <span class="math notranslate nohighlight">\(\rho\)</span> are</p>
 <ul class="simple">
 <li><p>kg/m<span class="math notranslate nohighlight">\(^3\)</span></p></li>
 <li><p>lbm/ft<span class="math notranslate nohighlight">\(^3\)</span></p></li>
 </ul>
-<section id="example-water-density">
-<h4>Example: water density<a class="headerlink" href="#example-water-density" title="Permalink to this headline">#</a></h4>
+<div class="section" id="example-water-density">
+<h4>Example: water density<a class="headerlink" href="#example-water-density" title="Permalink to this headline">¶</a></h4>
 <p>Think about an experiment you could perform to measure the density of water.
 What equipment would you need? How would you do it? What calculations would you do?
 What equation would be used? How would you know if you are right?</p>
@@ -643,9 +370,9 @@ What equation would be used? How would you know if you are right?</p>
 <p>This is compared to the literature value of 998 kg/m<span class="math notranslate nohighlight">\(^3\)</span> at 70 <span class="math notranslate nohighlight">\(^o\)</span>F. The difference is due to experimental error: error in the scale and visual error in computing the volume. The relative error is (989-998)/998 * 100% = -0.9%.</p>
 </div>
 </div>
-</section>
-<section id="example-particle-density-and-bulk-density-of-sand">
-<h4>Example: particle density and bulk density of sand<a class="headerlink" href="#example-particle-density-and-bulk-density-of-sand" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="example-particle-density-and-bulk-density-of-sand">
+<h4>Example: particle density and bulk density of sand<a class="headerlink" href="#example-particle-density-and-bulk-density-of-sand" title="Permalink to this headline">¶</a></h4>
 <p>Think about an experiment to measure the density of sand.
 How is this different than measuring the density of water?
 What can you do to account for these differences?</p>
@@ -679,16 +406,16 @@ We can define two densities:</p>
 \[\rho_b = \frac{m_s}{V_\mathrm{total}} = \frac{46.40\,\mathrm{g}}{30\,\mathrm{ml}} = 1.5\,\mathrm{g/ml}=1500\,\mathrm{kg/m}^3.\]</div>
 </div>
 </div>
-</section>
-</section>
-<section id="ideal-gases">
-<h3><span class="section-number">1.1.2. </span>Ideal gases<a class="headerlink" href="#ideal-gases" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="ideal-gases">
+<h3><span class="section-number">1.1.2. </span>Ideal gases<a class="headerlink" href="#ideal-gases" title="Permalink to this headline">¶</a></h3>
 <p>The ideal gas law is commonly written as <span class="math notranslate nohighlight">\(PV = nR_gT\)</span>. We rearrange this to <span class="math notranslate nohighlight">\(n/V = P/R_gT\)</span>, which is moles per volume. Multiplying both sides by the mean molecular weight M of the gas gives</p>
 <div class="math notranslate nohighlight">
 \[\rho = \frac{MP}{R_gT}.\]</div>
 <p>Here, <span class="math notranslate nohighlight">\(M\)</span> is the mean molecular weight of the gas, <span class="math notranslate nohighlight">\(P\)</span> is the absolute pressure, <span class="math notranslate nohighlight">\(R_g\)</span> is the gas constant, and <span class="math notranslate nohighlight">\(T\)</span> is the absolute temperature (kelvin or Rankine).</p>
-<section id="example-air-density">
-<h4>Example: air density<a class="headerlink" href="#example-air-density" title="Permalink to this headline">#</a></h4>
+<div class="section" id="example-air-density">
+<h4>Example: air density<a class="headerlink" href="#example-air-density" title="Permalink to this headline">¶</a></h4>
 <p>Compute the density of air at P=1 atm and 20 <span class="math notranslate nohighlight">\(^o\)</span>C=68 <span class="math notranslate nohighlight">\(^oF\)</span>.</p>
 <div>
 <button class="expandable">Solution</button>
@@ -704,7 +431,7 @@ We can define two densities:</p>
 </div>
 <p>Table <a class="reference internal" href="#t-fluid-densities"><span class="std std-numref">Table 1.1</span></a> gives densities for several fluids. Note that the difference in density between air and water is nearly a factor of one thousand. This allows important assumptions and simplifications in some calculations. This is illustrated in <a class="reference internal" href="#fig-air-water-vol-comparison"><span class="std std-numref">Fig. 1.1</span></a></p>
 <table class="colwidths-auto table" id="t-fluid-densities">
-<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Densities and specific gravities of several fluids.</span><a class="headerlink" href="#t-fluid-densities" title="Permalink to this table">#</a></caption>
+<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Densities and specific gravities of several fluids.</span><a class="headerlink" href="#t-fluid-densities" title="Permalink to this table">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Fluid</p></th>
 <th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\rho\)</span> (kg/m<span class="math notranslate nohighlight">\(^3\)</span>)</p></th>
@@ -740,19 +467,17 @@ We can define two densities:</p>
 </tr>
 </tbody>
 </table>
-<figure class="align-default" id="fig-air-water-vol-comparison">
+<div class="figure align-default" id="fig-air-water-vol-comparison">
 <a class="reference internal image-reference" href="../../_images/fig_air_water_vol_comparison.svg"><img alt="../../_images/fig_air_water_vol_comparison.svg" src="../../_images/fig_air_water_vol_comparison.svg" width="40%" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Relative volumes of air and water for equal masses.</span><a class="headerlink" href="#fig-air-water-vol-comparison" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="specific-gravity">
-<h3><span class="section-number">1.1.3. </span>Specific gravity<a class="headerlink" href="#specific-gravity" title="Permalink to this headline">#</a></h3>
+<p class="caption"><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Relative volumes of air and water for equal masses.</span><a class="headerlink" href="#fig-air-water-vol-comparison" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="specific-gravity">
+<h3><span class="section-number">1.1.3. </span>Specific gravity<a class="headerlink" href="#specific-gravity" title="Permalink to this headline">¶</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Relative_density" target="_blank">Specific gravity</a> is density divided by a reference density, usually water at 4 <span class="math notranslate nohighlight">\(^o\)</span>C which has a density of 1000 kg/m<span class="math notranslate nohighlight">\(^3\)</span>. That is</p>
 <div class="math notranslate nohighlight" id="eq-sg">
-<span id="equation-eq-sg"></span><span class="eqno">(1.2)<a class="headerlink" href="#eq-sg" title="Permalink to this equation">#</a></span>\[SG = \frac{\rho}{\rho_\text{H2O}}\]</div>
+<span id="equation-eq-sg"></span><span class="eqno">(1.2)<a class="headerlink" href="#eq-sg" title="Permalink to this equation">¶</a></span>\[SG = \frac{\rho}{\rho_\text{H2O}}\]</div>
 <p>So, a material with a specific gravity of 1 has the same density as water. A material with a specific gravity of 5 has a density five times that of water.
 Table <a class="reference internal" href="#t-fluid-densities"><span class="std std-numref">Table 1.1</span></a> shows SG values for several common fluids.</p>
 <div>
@@ -763,28 +488,24 @@ Table <a class="reference internal" href="#t-fluid-densities"><span class="std s
 </div>
 <!-- <span class="hoverme">Hover over me<br></span> -->
 <!-- <span class="hide"> isnt this fun! </span> -->
-</section>
-</section>
-<section id="viscosity">
-<h2><span class="section-number">1.2. </span>Viscosity<a class="headerlink" href="#viscosity" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="viscosity">
+<h2><span class="section-number">1.2. </span>Viscosity<a class="headerlink" href="#viscosity" title="Permalink to this headline">¶</a></h2>
 <p>The viscosity <span class="math notranslate nohighlight">\(\mu\)</span> of a fluid is a measure of the resistance to flow. Higher viscosity fluids have higher flow friction and are more resistant to deformation. Honey has a high viscosity compared to water. See <a class="reference internal" href="#fig-viscosity-demo"><span class="std std-numref">Fig. 1.2</span></a> for a simulation illustrating two fluids of different viscosities.</p>
-<figure class="align-default" id="fig-viscosity-demo">
+<div class="figure align-default" id="fig-viscosity-demo">
 <a class="reference internal image-reference" href="../../_images/Viscosities.gif"><img alt="../../_images/Viscosities.gif" src="../../_images/Viscosities.gif" style="width: 50%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Demonstration of flow of fluids with low (left) and high (right) viscosities. Attribution: “<a class="reference external" href="https://en.wikipedia.org/wiki/File:Viscosities.gif">Viscosities.gif</a>” by <a class="reference external" href="https://commons.wikimedia.org/w/index.php?title=User:Synapticrelay&amp;action=edit&amp;redlink=1">Synapticrelay</a> under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>; no changes made.</span><a class="headerlink" href="#fig-viscosity-demo" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Demonstration of flow of fluids with low (left) and high (right) viscosities. Attribution: “<a class="reference external" href="https://en.wikipedia.org/wiki/File:Viscosities.gif">Viscosities.gif</a>” by <a class="reference external" href="https://commons.wikimedia.org/w/index.php?title=User:Synapticrelay&amp;action=edit&amp;redlink=1">Synapticrelay</a> under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>; no changes made.</span><a class="headerlink" href="#fig-viscosity-demo" title="Permalink to this image">¶</a></p>
+</div>
 <p>Viscosity is precisely defined for a <em>Newtonian fluid</em> which obeys the relation</p>
 <div class="math notranslate nohighlight" id="equation-eq-newtons-law-of-viscosity">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-eq-newtons-law-of-viscosity" title="Permalink to this equation">#</a></span>\[\tau = -\mu\frac{du}{dy}.\]</div>
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-eq-newtons-law-of-viscosity" title="Permalink to this equation">¶</a></span>\[\tau = -\mu\frac{du}{dy}.\]</div>
 <p>Here, <span class="math notranslate nohighlight">\(\tau\)</span> is the shear stress, <span class="math notranslate nohighlight">\(u\)</span> is a velocity, and <span class="math notranslate nohighlight">\(y\)</span> is a directional coordinate. Viscosity is a property of the fluid and depends on the fluid temperature, pressure, and composition. For Newtonian fluids, the visocity does not depend on the shear rate <span class="math notranslate nohighlight">\(du/dy\)</span>. These quantities are illustrated in <a class="reference internal" href="#fig-couette-plates"><span class="std std-numref">Fig. 1.3</span></a>. The figure illustrates the flow between infinite parallel plates where the lower plate is fixed and the upper plate moves at some velocity <span class="math notranslate nohighlight">\(u\)</span>. This is a so-called
 <em><a href=https://en.wikipedia.org/wiki/Couette_flow target=_blank>Couette flow</a></em>.</p>
-<figure class="align-default" id="fig-couette-plates">
+<div class="figure align-default" id="fig-couette-plates">
 <a class="reference internal image-reference" href="../../_images/fig_couette_plates.svg"><img alt="../../_images/fig_couette_plates.svg" src="../../_images/fig_couette_plates.svg" width="50%" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">Illustration of steady flow between infinite parallel plates for a Newtonian fluid.</span><a class="headerlink" href="#fig-couette-plates" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 1.3 </span><span class="caption-text">Illustration of steady flow between infinite parallel plates for a Newtonian fluid.</span><a class="headerlink" href="#fig-couette-plates" title="Permalink to this image">¶</a></p>
+</div>
 <p>A linear <span class="math notranslate nohighlight">\(u(y)\)</span> profile is established between the plates. The shear stress <span class="math notranslate nohighlight">\(\tau\)</span> is the force per unit plate area required to maintain the flow, and Eq. <a class="reference internal" href="#equation-eq-newtons-law-of-viscosity">(1.3)</a> shows that <span class="math notranslate nohighlight">\(\mu\)</span> is a proportionality constant between <span class="math notranslate nohighlight">\(\tau\)</span> and the so-called <em>strain rate</em> <span class="math notranslate nohighlight">\(du/dy\)</span>. Eq. <a class="reference internal" href="#equation-eq-newtons-law-of-viscosity">(1.3)</a> can be rewritten in terms of the force on the plates as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -797,31 +518,31 @@ F = \tau A = -\mu A\frac{du}{dy}.
 <li><p>If we double <span class="math notranslate nohighlight">\(\mu\)</span>, what happens to <span class="math notranslate nohighlight">\(F\)</span>, all else being equal?</p></li>
 </ul>
 <p>Note, the forces involved here are frictional, that is, the force of friction due to the moving fluid. This can be described in terms of molecular collisions between faster moving fluid molecules at higher <span class="math notranslate nohighlight">\(y\)</span> being slowed by interactions with slower moving molecules at lower <span class="math notranslate nohighlight">\(y\)</span>.</p>
-<section id="tau-is-a-momentum-flux">
-<h3><span class="section-number">1.2.1. </span><span class="math notranslate nohighlight">\(\tau\)</span> is a momentum flux<a class="headerlink" href="#tau-is-a-momentum-flux" title="Permalink to this headline">#</a></h3>
+<div class="section" id="tau-is-a-momentum-flux">
+<h3><span class="section-number">1.2.1. </span><span class="math notranslate nohighlight">\(\tau\)</span> is a momentum flux<a class="headerlink" href="#tau-is-a-momentum-flux" title="Permalink to this headline">¶</a></h3>
 <p>From Newton’s second law, we have <span class="math notranslate nohighlight">\(F=ma\)</span>, or, for constant <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(a=dv/dt\)</span>, <span class="math notranslate nohighlight">\(F=d(mv)/dt\)</span>. Since <span class="math notranslate nohighlight">\(mv\)</span> is momentum, the force is a rate of change of momentum. Then <span class="math notranslate nohighlight">\(F/A = \tau\)</span> is a rate of change of momentum per unit area. That is, <span class="math notranslate nohighlight">\(\tau\)</span> is a momentum flux. We can write</p>
 <div class="math notranslate nohighlight">
 \[\tau = -\mu\frac{du}{dy},\]</div>
 <p>as an equation for momentum flux. This can be compared to conductive heat flux and diffusive mass flux, which have similar equations. In the Couette flow above, if we take <span class="math notranslate nohighlight">\(u\)</span> to be in the positve direction as shown, then <span class="math notranslate nohighlight">\(du/dy\)</span> is positive and <span class="math notranslate nohighlight">\(F\)</span> will be negative. The <em>fluid</em> exerts a negative force to the lefft on the plate, which is balanced by the <em>external</em> force pulling the plate to the right.</p>
-</section>
-<section id="id1">
-<h3><span class="section-number">1.2.2. </span>Units<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="id1">
+<h3><span class="section-number">1.2.2. </span>Units<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>The units of <span class="math notranslate nohighlight">\(\mu\)</span> are</p>
 <ul class="simple">
 <li><p>kg/(m<span class="math notranslate nohighlight">\(\cdot\)</span>s) = Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s (SI units).</p></li>
 <li><p>lbm/(ft<span class="math notranslate nohighlight">\(\cdot\)</span>s) (US units).</p></li>
 <li><p>poise (P) or centipoise (cP), with 1 P = 0.1 Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s, and 1 cP = 0.001 Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s</p></li>
 </ul>
-</section>
-<section id="kinematic-viscosity">
-<h3><span class="section-number">1.2.3. </span>Kinematic viscosity<a class="headerlink" href="#kinematic-viscosity" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="kinematic-viscosity">
+<h3><span class="section-number">1.2.3. </span>Kinematic viscosity<a class="headerlink" href="#kinematic-viscosity" title="Permalink to this headline">¶</a></h3>
 <p>The viscosity <span class="math notranslate nohighlight">\(\mu\)</span> discussed above is called the <em>dynamic</em> viscosity. The kinematic viscosity <span class="math notranslate nohighlight">\(\nu\)</span> is frequently used, and this is simply the dynamic viscosity divided by the density:</p>
 <div class="math notranslate nohighlight">
 \[\nu = \frac{\mu}{\rho}.\]</div>
 <p><span class="math notranslate nohighlight">\(\nu\)</span> has units of m<span class="math notranslate nohighlight">\(^2\)</span>/s, or ft<span class="math notranslate nohighlight">\(^2\)</span>/s.</p>
 <p>Table <a class="reference internal" href="#t-fluid-viscosities"><span class="std std-numref">Table 1.2</span></a> shows a list of dynamic and kinematic viscosities for several fluids. Note the large difference between the gases (air and CO<span class="math notranslate nohighlight">\(_2\)</span>) and the liquids, with the liquids having much higher dynamic viscosities, but smaller kinematic viscosities.</p>
 <table class="colwidths-auto table" id="t-fluid-viscosities">
-<caption><span class="caption-number">Table 1.2 </span><span class="caption-text">Viscosities of several fluids.</span><a class="headerlink" href="#t-fluid-viscosities" title="Permalink to this table">#</a></caption>
+<caption><span class="caption-number">Table 1.2 </span><span class="caption-text">Viscosities of several fluids.</span><a class="headerlink" href="#t-fluid-viscosities" title="Permalink to this table">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>fluid</p></th>
 <th class="text-align:center head"><p><span class="math notranslate nohighlight">\(\mu\)</span> (Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s)</p></th>
@@ -869,39 +590,33 @@ F = \tau A = -\mu A\frac{du}{dy}.
 <iframe src="https://en.wikipedia.org/wiki/List_of_viscosities" width=100% height=500px></iframe>
 </div>
 </div>
-</section>
-</section>
-<section id="surface-tension">
-<h2><span class="section-number">1.3. </span>Surface tension<a class="headerlink" href="#surface-tension" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="surface-tension">
+<h2><span class="section-number">1.3. </span>Surface tension<a class="headerlink" href="#surface-tension" title="Permalink to this headline">¶</a></h2>
 <p>Liquids are held together by <em>cohesive</em> intermolecular forces. At a fluid interface these forces are nonuniformly distributed. This happens because the forces at the fluid interface are different in directions into the fluid, out of the fluid, and along the interface. These forces can make the fluid behave as if it has a <em>skin</em>.</p>
-<figure class="align-default" id="fig-surface-tension">
+<div class="figure align-default" id="fig-surface-tension">
 <a class="reference internal image-reference" href="../../_images/surface_tension.svg"><img alt="../../_images/surface_tension.svg" src="../../_images/surface_tension.svg" width="50%" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text"><a class="reference external" href="https://commons.wikimedia.org/wiki/File:Wassermolek%C3%BCleInTr%C3%B6pfchen.svg">Illustration</a> of molecular forces in a fluid at a surface.</span><a class="headerlink" href="#fig-surface-tension" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 1.4 </span><span class="caption-text"><a class="reference external" href="https://commons.wikimedia.org/wiki/File:Wassermolek%C3%BCleInTr%C3%B6pfchen.svg">Illustration</a> of molecular forces in a fluid at a surface.</span><a class="headerlink" href="#fig-surface-tension" title="Permalink to this image">¶</a></p>
+</div>
 <p>Consider a water-air interface illustrated in <a class="reference internal" href="#fig-surface-tension"><span class="std std-numref">Fig. 1.4</span></a>. Molecules in the interior of the fluid are pulled in all directions equally by attractive forces with other molecules. But at the fluid surface, the water molecules are only pulled along the surface and into the bulk fluid, (with negligible interactions between the water and air). These forces are the reason water droplets tend to form spheres: the attraction into the center deforms the fluid to minimize the surface area.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zMzqiAuOSz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>At a fluid-solid interace, the fluid will experience <em>adhesive</em> forces. The balance between the cohesive fluid forces and the adhesive fluid-solid forces results in interesting behavior. Water that is poured slowly from a glass will sometimes adhere to the surface and run down the side. These forces result in a meniscus when measuring liquid volumes in a graduated cylinder. When the adhesive forces are greater than the cohesive forces, the liquid climbs the sides of the glass and forms a concave surface. Otherwise a convex surface forms. See <a class="reference internal" href="#fig-meniscus"><span class="std std-numref">Fig. 1.5</span></a>.</p>
-<figure class="align-default" id="fig-meniscus">
+<div class="figure align-default" id="fig-meniscus">
 <a class="reference internal image-reference" href="../../_images/meniscus.jpeg"><img alt="../../_images/meniscus.jpeg" src="../../_images/meniscus.jpeg" style="width: 30%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">Mercury (left) with convex meniscus, and water (right) with a concave meniscus. Attribution: <a class="reference external" href="https://www.usgs.gov/media/images/water-has-upward-meniscus-mercury-has-downward-meniscus">usgs.gov</a> under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>; no changes made.</span><a class="headerlink" href="#fig-meniscus" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 1.5 </span><span class="caption-text">Mercury (left) with convex meniscus, and water (right) with a concave meniscus. Attribution: <a class="reference external" href="https://www.usgs.gov/media/images/water-has-upward-meniscus-mercury-has-downward-meniscus">usgs.gov</a> under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>; no changes made.</span><a class="headerlink" href="#fig-meniscus" title="Permalink to this image">¶</a></p>
+</div>
 <p>Adhesive forces between a fluid and a surface give rise to <em>capilary</em> action in which a fluid can climb up a surface to a height where the adhesive forces balance the weight of the fluid.</p>
 <p>Surface tension is defined a force per unit length</p>
 <div class="math notranslate nohighlight">
 \[\sigma = \frac{F}{L}.\]</div>
-<p>In <a class="reference internal" href="#fig-droplet"><span class="std std-numref">Fig. 1.6</span></a>, the surface tension forces balance the gravitational weight of the droplet <span class="math notranslate nohighlight">\(F\)</span>, and <span class="math notranslate nohighlight">\(L=\pi D\)</span>.</p>
-<figure class="align-default" id="fig-droplet">
+<p>In <a class="reference internal" href="#fig-droplet"><span class="std std-numref">Fig. 1.6</span></a>, the surface tension forces balance the gravitational weight of the droplet <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(L=\pi D\)</span>.</p>
+<div class="figure align-default" id="fig-droplet">
 <a class="reference internal image-reference" href="../../_images/droplet.svg"><img alt="../../_images/droplet.svg" src="../../_images/droplet.svg" width="20%" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1.6 </span><span class="caption-text">Surface tension forces (white) balancing the weight of a droplet (black).</span><a class="headerlink" href="#fig-droplet" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<section id="example-water-surface-forces">
-<h3><span class="section-number">1.3.1. </span>Example: water surface forces<a class="headerlink" href="#example-water-surface-forces" title="Permalink to this headline">#</a></h3>
+<p class="caption"><span class="caption-number">Fig. 1.6 </span><span class="caption-text">Surface tension forces (white) balancing the weight of a droplet (black).</span><a class="headerlink" href="#fig-droplet" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="example-water-surface-forces">
+<h3><span class="section-number">1.3.1. </span>Example: water surface forces<a class="headerlink" href="#example-water-surface-forces" title="Permalink to this headline">¶</a></h3>
 <p>The surface tension of water at 20 <span class="math notranslate nohighlight">\(^o\)</span>C is 0.07275 N/m = 72.75 dyne/cm. Surface forces are usually only important at relatively small scales. Demonstrate this by computing the diameter of a sphere of water for which the weight of the sphere equals the surface forces around the circumference of the spere.</p>
 <div>
 <button class="expandable">Solution</button>
@@ -918,15 +633,15 @@ F = \tau A = -\mu A\frac{du}{dy}.
 <p>A sphere of water the size of a golf ball would have a weight 41 times higher than the surface tension multiplied by the circumference.</p>
 </div>
 </div>
-</section>
-</section>
-<section id="pressure">
-<h2><span class="section-number">1.4. </span>Pressure<a class="headerlink" href="#pressure" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="velocity">
-<h2><span class="section-number">1.5. </span>Velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">#</a></h2>
-</section>
-</section>
+</div>
+</div>
+<div class="section" id="pressure">
+<h2><span class="section-number">1.4. </span>Pressure<a class="headerlink" href="#pressure" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="velocity">
+<h2><span class="section-number">1.5. </span>Velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -950,48 +665,54 @@ F = \tau A = -\mu A\frac{du}{dy}.
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../title_page.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Fluid Mechanics for Engineers</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../fluid_statics.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Fluid Statics</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By David O. Lignell<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+        
+            
+
+
+
+<div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="../../title_page.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Fluid Mechanics for Engineers</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../fluid_statics.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title"><span class="section-number">2. </span>Fluid Statics</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
 </div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By David O. Lignell<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-
+  
   </body>
 </html>
