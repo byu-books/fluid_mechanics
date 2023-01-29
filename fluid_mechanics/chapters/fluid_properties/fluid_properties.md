@@ -205,7 +205,7 @@ The viscosity $\mu$ of a fluid is a measure of the resistance to flow. Higher vi
 width: 50%
 name: fig:viscosity_demo
 ---
-Demonstration of flow of fluids with low (left) and high (right) viscosities. Attribution: "[Viscosities.gif](https://en.wikipedia.org/wiki/File:Viscosities.gif)" by [Synapticrelay](https://commons.wikimedia.org/w/index.php?title=User:Synapticrelay&action=edit&redlink=1) under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en); no changes made. 
+Demonstration of flow of fluids with low (left) and high (right) viscosities. Attribution: [Synapticrelay](https://en.wikipedia.org/wiki/File:Viscosities.gif), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), no changes. 
 ```
 
 Viscosity is precisely defined for a *Newtonian fluid* which obeys the relation
@@ -314,7 +314,7 @@ At a fluid-solid interace, the fluid will experience *adhesive* forces. The bala
 width: 30%
 name: fig:meniscus
 ---
-Mercury (left) with convex meniscus, and water (right) with a concave meniscus. Attribution: [usgs.gov](https://www.usgs.gov/media/images/water-has-upward-meniscus-mercury-has-downward-meniscus) under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/); no changes made. 
+Mercury (left) with convex meniscus, and water (right) with a concave meniscus. Attribution: [usgs.gov](https://www.usgs.gov/media/images/water-has-upward-meniscus-mercury-has-downward-meniscus), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/), no changes. 
 ```
 
 Adhesive forces between a fluid and a surface give rise to *capilary* action in which a fluid can climb up a surface to a height where the adhesive forces balance the weight of the fluid. 
@@ -363,6 +363,48 @@ A sphere of water the size of a golf ball would have a weight 41 times higher th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ## Pressure
+
+Pressure is an important property in fluid mechanics. Pressure is a force per unit area normal to a surface
+
+$$P = \frac{F}{A}.$$
+
+The SI unit of pressure is Pascal (Pa), with Pa $\equiv$ N/m$^2$. In U.S. Customary Units (USCU), pressure is given by pounds-force per square inch (psi). Note that pressure is a scalar quantity, not a vector, so the force $F$ in the above equation represents the magnitude of the force normal to the surface. 
+
+Pressure is easier to define and visualize in terms of the force on a surface, but pressure exists throughout a fluid without a physical surface present. We can consider two adjacent fluids with an imaginary plane between them. The fluid on one side exerts a force on the adjacent fluid in the same way that the fluid exerts a force on a solid surface. This arises from molecular collisions in the fluid. The fluid-fluid interactions are the same regardless of how the plane is oriented because the molecular motions at a point don't have any preferred direction. We say, then, that the pressure is **isotropic**, that is, independent of direction. This is consistent with the pressure being a scalar instead of a vector.
+
+```{figure} pressure_collisions.svg
+---
+width: 40%
+name: fig:pressure_collisions
+---
+Pressure on surfaces arising from molecular collisions. 
+Attribution: [Becarlson](https://commons.wikimedia.org/wiki/File:Pressure_exerted_by_collisions.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), no changes.
+```
+
+Pressure, arising from molecular motions, depends on the speed of individual molecules and the rate of collisions. For ideal gases, the pressure is given by
+
+$$P = \frac{nRT}{V},$$
+
+where $n$ is moles, $R$ is the universal [gas constant](https://en.wikipedia.org/wiki/Gas_constant), $T$ is absolute temperature, and $V$ is volume. $n/V$ is a molar density or *concentration*, which is proportional to the number of molecules per unit volume. The molecular speed is proportional to temperature. Hence, the pressure increases as both the molecular speed increases, and as the concentration of molecules increases. That is, pressure is higher when the molecules strike "harder" and strike more often.
+
+In general, the pressure in a fluid changes from one location to another, and depends on fluid velocity and the depth of the fluid. The effect of fluid depth is discussed in {ref}`chap:fluid_statics`.
+
+%todo: update jupyterbooks, looks like referencing a chapter got fixed yesterday!
+%https://github.com/executablebooks/jupyter-book/issues/1119
+
+% todo: move this to the fluid statics chapter
+%### Atmospheric pressure
+%
+%The atmosphere exerts a pressure that varies with elevation due to the weight of the air above. At sea level, the atmospheric pressure is given the convenient unit of 1 atm (or one *atmosphere*). The following are all equivalent and can be used for conveting pressure units:
+%* 1 atm
+%* 101325 Pa
+%* 14.6960 psi
+%
+%Note how much smaller a Pascal is than a psi or an atm: it takes 101325 Pa to make 1 atm and it takes 6895 Pa to make 1 psi. 
+%* For practical calculations, atmospheric pressure is 14.7 psi.
+%
+%### Absolute and gauge pressure
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
