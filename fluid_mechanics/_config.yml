@@ -2,7 +2,7 @@
 
 title      : Fluid Mechanics for Engineers
 author     : David O. Lignell
-copyright  : "2021"
+copyright  : "2024"
 logo       : logo.png
 
 execute:
@@ -24,8 +24,21 @@ only_build_toc_files: true
 
 #----- see https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
 parse:
-  myst_extended_extensions:
+  myst_enable_extensions:
     - amsmath
+    #- attrs_inline
+    #- colon_fence
+    #- deflist
+    - dollarmath
+    #- fieldlist
+    #- html_admonition
+    - html_image
+    #- linkify
+    #- replacements
+    #- smartquotes
+    #- strikethrough
+    #- substitution
+    #- tasklist
 
 launch_buttons:
     thebe: true
